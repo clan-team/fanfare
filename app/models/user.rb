@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
   def password=(new_password)
   	write_attribute(
-  		:password_hash, Digest::MD5.hexdigest(new_password)
+  		:password_hash, hash_password(new_password)
   	)
   end
 
@@ -18,4 +18,14 @@ class User < ActiveRecord::Base
   	params.delete('password')
   	User.where(params).first
   end
+
+  def self.hash_password(password)
+    Digest::MD5.hexdigest(password)
+  end
+
+  def hash_password(password)
+    self.class.hash_password(password)
+  end
+
+
 end
