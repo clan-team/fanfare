@@ -10,14 +10,16 @@ class SessionsController < ApplicationController
 		end
 	end
 
+	def destroy
+		session.delete(:user_id)
+		redirect_to(root_path, notice: "Logged out")
+	end
+
 	private
 
 	def user_params
 		params.require(:user).permit(:username, :password)
 	end
 
-	def destroy
-		session.delete(:user_id)
-		redirect_to(root_path, notice: "Logged out")
-	end
+	
 end
