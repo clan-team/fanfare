@@ -9,8 +9,8 @@ class AddUsersTable < ActiveRecord::Migration
   		t.boolean :active
   		t.string :type
   		t.string :profileImg
-  		t.integer :lat
-  		t.integer :long
+  		t.float :lat, precision: 10, scale: 6
+  		t.float :long, precision: 10, scale: 6
   		t.timestamps
   	end
   end
