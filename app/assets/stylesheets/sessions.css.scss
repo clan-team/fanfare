@@ -1,0 +1,23 @@
+.sessions {
+  overflow: hidden;
+
+  &.new {
+    background-color: #38A4DD;
+    padding-top: 10%;
+    height: 100%;
+
+    .logo {
+      background: asset-url('logo.png') no-repeat;
+      background-size: 200px 200px;
+      width: 200px;
+      height: 200px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .fields {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
