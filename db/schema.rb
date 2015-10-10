@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151010183322) do
+ActiveRecord::Schema.define(version: 20151010185700) do
 
   create_table "entities", force: :cascade do |t|
     t.string   "name",       limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "entities_users", force: :cascade do |t|
+    t.integer  "user_id",    limit: 4, null: false
+    t.integer  "entity_id",  limit: 4, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -26,9 +33,9 @@ ActiveRecord::Schema.define(version: 20151010183322) do
     t.datetime "updated_at"
   end
 
-  create_table "user_entity", force: :cascade do |t|
-    t.string   "username",   limit: 255
-    t.string   "entityID",   limit: 255
+  create_table "favorite_locations_users", force: :cascade do |t|
+    t.integer  "favorite_location_id", limit: 4
+    t.integer  "user_id",              limit: 4
     t.datetime "created_at"
     t.datetime "updated_at"
   end
