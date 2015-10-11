@@ -2,7 +2,7 @@
 
 .entities {
   &.index {
-    height: 100%;
+    min-height: 100%;
     background-color: $fanfare-blue;
 
     .done-btn {
@@ -11,7 +11,7 @@
   }
 
   &.show {
-    height: 100%;
+    min-height: 100%;
     background-color: $fanfare-blue;
     
     .event_div {
@@ -63,6 +63,8 @@
     }
 
     .tab-contents {
+      overflow: hidden;
+
       &.inactive {
         display: none;
       }
@@ -74,6 +76,54 @@
       margin-top: 5px;
       font-size: 15px;
       font-weight: bold;
+    }
+
+    .score {
+      background-color: #FFF;
+      padding: 10px;
+      margin-top: 5px;
+
+      .team {
+        overflow: hidden;
+        margin-bottom: 10px;
+
+        .team-logo {
+          height: 40px;
+          width: 40px;
+          float: left;
+          margin-top: 5px;
+
+          &.cubs {
+            background: asset-url('logos/cubs-small.png') no-repeat;
+            background-size: 40px 40px;
+          }
+
+          &.cardinals {
+            background: asset-url('logos/cardinals-small.png') no-repeat;
+            background-size: 40px 40px;
+          }
+        }
+
+        .team-info {
+          float: left;
+          margin-left: 10px;
+          width: 130px;
+
+          .city {
+            font-size: 12px;
+          }
+
+          .team-name {
+            font-size: 18px;
+          }
+        }
+
+        .team-score {
+          float: left;
+          font-size: 20px;
+          margin-top: 10px;
+        }
+      }
     }
   }
 }
