@@ -1,0 +1,16 @@
+<div class='users new row-fluid'>
+  <div class='col-xs-12'>
+    <div class='logo'></div>
+    <div class='logotype'></div>
+
+    <div class='fields'>
+      <%= form_for :user, as: 'POST', url:users_path do |f| %>
+        <div class='input-group center-block'>
+          <%= f.text_field :username, class: 'form-control', placeholder: 'Username' %>
+          <%= f.password_field :password, class: 'form-control', placeholder: 'Password' %>
+          <%= f.submit 'Sign-up', class: 'btn btn-default' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
