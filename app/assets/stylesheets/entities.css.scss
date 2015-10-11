@@ -13,7 +13,21 @@
   &.show {
     height: 100%;
     background-color: $fanfare-blue;
-
+    
+    .event_div {
+      height: 180px;
+      width: 130px;
+      background-color: #FFFFFF;
+      margin-left: 10px;
+      border-radius: 10px;
+    }
+    .get_tickets_btn {
+      height: 40px;
+      overflow: auto;
+      position: relative;
+      bottom: -130px;
+      right: -6px;
+    }
     .tabs {
       overflow: hidden;
       border-bottom: 1px solid darken($fanfare-blue, 15%);
