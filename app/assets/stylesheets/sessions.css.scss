@@ -17,6 +17,14 @@
       margin-left: auto;
     }
 
+    .logotype {
+      background: asset-url('logotype.png') no-repeat;
+      background-size: 200px 35px;
+      width: 200px;
+      height: 35px;
+      margin: 20px auto 50px auto;
+    }
+
     .fields {
       padding: 10px;
 
