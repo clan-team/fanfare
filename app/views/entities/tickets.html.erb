@@ -1,6 +1,10 @@
 <div class='entities show row-fluid'>
   <%= render(partial: 'entities/shared/entity', locals: { entity: @entity, follow: false }) %> 
   <div class='event_div'>
+  	<div class='event_title'>
+  	<h4>This Week:</h4>
+  	<h5>Cardinals vs. Cubs @ Busch Stadium</h5>
+  </div>
   <script type="text/javascript"
         src="https://www.simplify.com/commerce/simplify.pay.js"></script>
         <script type="text/javascript" src="https://www.simplify.com/commerce/v1/simplify.js"></script>
@@ -11,7 +15,7 @@
         data-amount="39999"
         data-color="#38A4DD"
         data-masterpass="true"
-        >Buy Now
+        ><span style="font-size: small !important;">Buy Now</span>
 </button>
 </div>
 

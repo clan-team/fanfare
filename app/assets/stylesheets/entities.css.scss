@@ -18,16 +18,25 @@
       height: 180px;
       width: 130px;
       background-color: #FFFFFF;
+      padding: 8px;
       margin-left: 10px;
       border-radius: 10px;
     }
+
+    .event_title {
+      padding-left: 8px;
+    }
+
     .get_tickets_btn {
       height: 40px;
-      overflow: auto;
       position: relative;
-      bottom: -130px;
-      right: -6px;
+      font-size: small;
+      padding-bottom: 8px;
+      bottom: -20px;
+      margin: 0px !important;
+      right: 0px;
     }
+
     .tabs {
       overflow: hidden;
       border-bottom: 1px solid darken($fanfare-blue, 15%);

@@ -49,4 +49,39 @@ $(document).ready(function() {
   //     });
   //   });
   // });
+
+  // callApi = function(api, type, params, cbFunc, progressCbFunc) {
+
+    // This function makes the actaul ajax call to the http api.
+    // Note: progressCbFunc is optional. It can be used for api calls
+    //       that return large amounts of data in chunks. It receives
+    //       an event param that contains a property "loaded" which is the
+    //       number of bytes that have been received. It is called each
+    //       time a new chunk of data is received from the server.
+
+    // var ajaxReq = {
+    //     url:"http://" + api,
+    //     // :version/:resource/:method?apikey=:yourkey
+    //     type:      type,
+    //     data:      params,
+    //     success:   cbFunc,
+    //     error: function(object, info){
+    //         // alert('Error talking to server');
+    //         }
+    //     };
+    //     if (progressCbFunc !== undefined)
+    //     {
+    //         if (ajaxReq.xhrFields === undefined)
+    //         {
+    //             ajaxReq["xhrFields"] = {onprogress: progressCbFunc};
+    //         }
+    //         else
+    //         {
+    //             ajaxReq.xhrFields = {onprogress: progressCbFunc};
+    //         } 
+    //     }
+    //     return $.ajax(ajaxReq);
+    // };
+
+    // callApi("http://api.espn.com/");
 });
