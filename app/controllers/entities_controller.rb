@@ -14,4 +14,9 @@ class EntitiesController < ApplicationController
   def fan
     @entity = Entity.find(params[:id])
   end
+
+	def rides
+		@entity = Entity.find(params[:id])
+	end
+
 end
