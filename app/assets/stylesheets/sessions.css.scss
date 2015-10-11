@@ -1,0 +1,37 @@
+@import 'colors';
+
+.sessions {
+  overflow: hidden;
+
+  &.new {
+    background-color: $fanfare-blue;
+    padding-top: 10%;
+    height: 100%;
+
+    .logo {
+      background: asset-url('logo.png') no-repeat;
+      background-size: 200px 200px;
+      width: 200px;
+      height: 200px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .logotype {
+      background: asset-url('logotype.png') no-repeat;
+      background-size: 200px 35px;
+      width: 200px;
+      height: 35px;
+      margin: 20px auto 50px auto;
+    }
+
+    .fields {
+      padding: 10px;
+
+      .btn {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+}

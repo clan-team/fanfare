@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 
-
   resource :sessions, only: [:new, :create, :destroy]
   resources :entities, only: [:index]
   resources :entities_users, only: [:create]
@@ -58,4 +57,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  resources :sessions, only: [:new, :create, :destroy]
 end
