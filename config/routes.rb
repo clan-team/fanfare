@@ -12,7 +12,6 @@ Rails.application.routes.draw do
     resources :entities, controller: 'users/entities'
   end
 
-
   get 'entities/:id/tickets' => 'entities#tickets', as: 'tickets'
   get 'twitter/latest' => 'twitter#latest', as: 'latest_twitter'
 

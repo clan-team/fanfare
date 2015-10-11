@@ -38,6 +38,7 @@ $(document).ready(function() {
     });
   });
 
+  // no idea why this doesn't work...
   // var route = Routes.latest_twitter_path({account: 'cardinals'});
   // $.get(route).done(function(data) {
   //   $.each(data['ids'], function(idx, tweet_id) {

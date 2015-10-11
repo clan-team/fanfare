@@ -1,11 +1,16 @@
-<%= link_to(new_session_path) do %>
-        <button>
-                Log In
-        </button>
-<% end %>
+<div class='home index row-fluid'>
+  <div class='col-xs-12'>
+    <div class='logo'></div>
+    <div class='logotype'></div>
 
-<%= link_to(new_user_path) do %>
-        <button>
-                Sign Up
-        </button>
-<% end %> 
+    <div class='foo'>
+      <%= link_to(new_session_path) do %>
+        <button class='btn btn-default'>Log In</button>
+      <% end %>
+
+      <%= link_to(new_user_path) do %>
+        <button class='btn btn-default'>Sign Up</button>
+      <% end %>
+    </div>
+  </div>
+</div>

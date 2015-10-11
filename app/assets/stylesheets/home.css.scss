@@ -1,0 +1,15 @@
+@import 'colors';
+
+.home {
+  overflow: hidden;
+
+  &.index {
+    padding-top: 20%;
+    background-color: $fanfare-blue;
+    min-height: 100%;
+
+    .foo {
+      text-align: center;
+    }
+  }
+}
