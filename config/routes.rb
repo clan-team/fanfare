@@ -12,6 +12,8 @@ Rails.application.routes.draw do
     resources :entities, controller: 'users/entities'
   end
 
+  get 'twitter/latest' => 'twitter#latest', as: 'latest_twitter'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

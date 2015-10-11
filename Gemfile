@@ -34,6 +34,7 @@ gem 'bootstrap-sass', '~> 3.3'
 gem 'responders'
 gem 'js-routes'
 gem 'pg'
+gem 'twitter'
 
 group :development, :test do
   gem 'mysql2', '~> 0.3.18'

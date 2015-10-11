@@ -28,4 +28,24 @@ $(document).ready(function() {
     $('.live-it-contents').removeClass('inactive');
     $('.read-it-contents').addClass('inactive');
   });
+
+  var tweet_ids = ['653027251475189760', '653021875883261952', '653006289568530432'];
+
+  $.each(tweet_ids, function(idx, tweet_id) {
+    var elem = $('.tweet' + idx.toString());
+    twttr.widgets.createTweet(tweet_id.toString(), elem[0], {
+      cards: 'hidden', conversation: 'none', theme: 'light'
+    });
+  });
+
+  // var route = Routes.latest_twitter_path({account: 'cardinals'});
+  // $.get(route).done(function(data) {
+  //   $.each(data['ids'], function(idx, tweet_id) {
+  //     var elem = $('.tweet' + idx.toString());
+
+  //     twttr.widgets.createTweet(tweet_id.toString(), elem[0], {
+  //       cards: 'hidden', conversation: 'none', theme: 'light'
+  //     });
+  //   });
+  // });
 });
