@@ -3,7 +3,9 @@
     <h4>What are you interested in?</h4>
 
     <% @entities.each do |entity| %>
-    	<%= render(partial: "entities/shared/entity", locals: { entity: entity }) %>
+      <%= render(partial: "entities/shared/entity", locals: { entity: entity, follow: true }) %>
     <% end %>
+
+    <%= link_to('Done!', user_entities_path(@current_user), class: 'btn btn-default done-btn') %>
   </div>
 </div>

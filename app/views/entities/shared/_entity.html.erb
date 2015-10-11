@@ -6,5 +6,7 @@
 		<div class='category'><%= entity.category %></div>
 		<div class='entity-name'><%= entity.name %></div>
 	</div>
-  <button class='follow-btn btn btn-default'>Follow</button>
+  <% if follow %>
+    <button class='follow-btn btn btn-default'>Follow</button>
+  <% end %>
 </div>

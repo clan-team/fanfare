@@ -4,5 +4,22 @@
   &.index {
     height: 100%;
     background-color: $fanfare-blue;
+
+    .done-btn {
+      width: 100%;
+    }
+  }
+
+  &.show {
+    height: 100%;
+    background-color: $fanfare-blue;
+
+    .tabs {
+      .tab {
+        height: 20px;
+        width: 50%;
+        vertical-align: center;
+      }
+    }
   }
 }
