@@ -6,7 +6,7 @@
       <%= form_for :user, as: 'POST', url:sessions_path do |f| %>
         <div class='input-group center-block'>
           <%= f.text_field :username, class: 'form-control', placeholder: 'Username' %>
-          <%= f.text_field :password, class: 'form-control', placeholder: 'Password' %>
+          <%= f.password_field :password, class: 'form-control', placeholder: 'Password' %>
           <%= f.submit 'Login', class: 'btn btn-default' %>
         </div>
       <% end %>
