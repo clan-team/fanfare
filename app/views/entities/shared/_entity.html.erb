@@ -1,15 +1,10 @@
-<div class="entity">
+<div class="entity" data-entity-id="<%= entity.id %>">
 	<div class="logo">
 		<img src="<%= image_path(entity.logo_path) %>"/>
 	</div>
 	<div class="info">
-		<div>
-			<%=  entity.category  %>
-		</div>
-		<div>
-			<%= entity.name %>
-		</div>
-		<button class='follow-btn'>Follow
-		</button>
+		<div class='category'><%= entity.category %></div>
+		<div class='entity-name'><%= entity.name %></div>
 	</div>
+  <button class='follow-btn btn btn-default'>Follow</button>
 </div>

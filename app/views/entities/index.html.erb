@@ -1,5 +1,9 @@
-<%  @entities.each do |entity|  %>
+<div class='entities index row'>
+  <div class='col-xs-12'>
+    <h4>What are you interested in?</h4>
 
-	<%= render(partial: "entities/shared/entity", locals: { entity: entity }) %>
-
-<% end %>
+    <% @entities.each do |entity| %>
+    	<%= render(partial: "entities/shared/entity", locals: { entity: entity }) %>
+    <% end %>
+  </div>
+</div>

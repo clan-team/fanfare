@@ -1,19 +1,39 @@
-.entity{
-	
+@import 'colors';
+
+.entity {
 	overflow: hidden;
+	margin-bottom: 5px;
+	background-color: #FFF;
 
 	.logo {
 		float: left;
+
 		img {
-			height: 80px;	
+			height: 80px;
 			width: 80px;
 		}
 	}
 
 	.info {
 		float: left;
-		padding-left: 15px;
+		padding: 15px;
+		float :left;
 
+		.category {
+			text-transform: uppercase;
+			font-size: 13px;
+			font-weight: bold;
+			color: $fanfare-gray;
+		}
+
+		.entity-name {
+			font-size: 17px;
+		}
 	}
 
+	.follow-btn {
+		float: right;
+		margin-top: 22px;
+		margin-right: 10px;
+	}
 }
