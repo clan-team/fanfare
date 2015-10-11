@@ -30,7 +30,9 @@
   </div>
   <div class='tab-contents live-it-contents'>
     <div class='bar'>Rides</div>
-    <div class='bar'>Tickets</div>
+    <%= link_to(tickets_path) do %>
+      <div class='bar'>Tickets</div>
+    <% end %>
     <div class='bar'>Competitions</div>
     <div class='bar'>Store</div>
     <div class='bar'>Auctions</div>
