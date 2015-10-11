@@ -6,4 +6,8 @@ class EntitiesController < ApplicationController
   def show
     @entity = Entity.find(params[:id])
   end
+
+  def tickets
+  	@entity = Entity.find(params[:id])
+	end
 end
