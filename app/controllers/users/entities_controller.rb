@@ -3,9 +3,6 @@ class Users::EntitiesController < ApplicationController
 		@entities = User.find(params[:user_id]).entities
 	end
 
-	def show
-	end
-
 	def create
 		user = User.find(entities_users_params[:user_id])
 		entity = Entity.find(entities_users_params[:id])

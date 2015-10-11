@@ -15,11 +15,51 @@
     background-color: $fanfare-blue;
 
     .tabs {
+      overflow: hidden;
+      border-bottom: 1px solid darken($fanfare-blue, 15%);
+      border-top: 1px solid darken($fanfare-blue, 15%);
+
       .tab {
-        height: 20px;
         width: 50%;
         vertical-align: center;
+        float: left;
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: darken($fanfare-blue, 15%);
+        }
+
+        &.active {
+          background-color: darken($fanfare-blue, 10%);
+
+          &:hover {
+            background-color: darken($fanfare-blue, 15%);
+          }
+        }
+
+        &.separator {
+          border-right: 1px solid darken($fanfare-blue, 15%);
+        }
       }
+    }
+
+    .tab-contents {
+      &.inactive {
+        display: none;
+      }
+    }
+
+    .bar {
+      padding: 25px;
+      background-color: #FFF;
+      margin-top: 5px;
+      font-size: 15px;
+      font-weight: bold;
     }
   }
 }
