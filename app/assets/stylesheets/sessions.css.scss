@@ -1,8 +1,10 @@
+@import 'colors';
+
 .sessions {
   overflow: hidden;
 
   &.new {
-    background-color: #38A4DD;
+    background-color: $fanfare-blue;
     padding-top: 10%;
     height: 100%;
 
@@ -16,8 +18,7 @@
     }
 
     .fields {
-      margin-left: auto;
-      margin-right: auto;
+      padding: 10px;
     }
   }
 }
