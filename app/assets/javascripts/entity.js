@@ -4,8 +4,9 @@ $(document).ready(function() {
     var parent = button.closest('.entity');
     var entityId = $(parent).data('entity-id');
     var userId = $('body').data('user-id');
-    var route = Routes.entities_users_path({format: 'json'});
-    var data = {user_id: userId, entity_id: entityId};
+    var route = Routes.user_entities_path({user_id: userId, format: 'json'});
+    var data = {id: entityId};
+    debugger;
 
     button.prop('disabled', true);
 

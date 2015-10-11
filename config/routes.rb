@@ -6,8 +6,11 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resource :sessions, only: [:new, :create, :destroy]
-  resources :entities, only: [:index]
-  resources :entities_users, only: [:create]
+  resources :entities, only: [:index, :show]
+
+  resources :users, only: [] do
+    resources :entities, controller: 'users/entities'
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

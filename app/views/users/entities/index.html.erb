@@ -1,0 +1,10 @@
+<div class='entities index row-fluid'>
+  <div class='col-xs-12'>
+    <h4>You're Following:</h4>
+    <% @entities.each do |entity| %>
+      <%= link_to(entity_path(entity)) do %>
+        <%= render(partial: "entities/shared/entity", locals: { entity: entity, follow: false }) %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
