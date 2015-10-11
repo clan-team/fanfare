@@ -11,24 +11,20 @@
     .logo {
       background: asset-url('logo.png') no-repeat;
       background-size: 200px 200px;
-      width: 200px;
       height: 200px;
-      margin-right: auto;
-      margin-left: 80px;
     }
 
     .logotype {
       background: asset-url('logotype.png') no-repeat;
       background-size: 200px 35px;
-      width: 200px;
       height: 35px;
-      margin: 20px auto 50px 80px;
+      margin-top: 20px;
+      margin-bottom: 50px;
     }
 
     .fields {
       padding: 10px;
       height: 100px;
-      width: 375px;
 
       .btn {
         width: 100%;

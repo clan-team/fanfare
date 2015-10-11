@@ -3,28 +3,31 @@
   <head>
     <title>Fanfare</title>
     <link rel="apple-touch-startup-image" href="../../../images/splash-screen.png" />
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=yes,width=960, scrollbars=no" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=yes,scrollbars=no" />
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
 
   <body <%= @current_user ? "data-user-id=\"#{@current_user.id}\"".html_safe : "" %>>
-    <% if flash[:alert] %>
-    	<p style="color: #F00"><%= flash[:alert] %></p>
-    <% end %>
-    <% if flash[:notice] %>
-    	<p style="color: #0F0"><%= flash[:notice] %></p>
-    <% end %>
-    <%= yield %>
+    <div class='container-fluid'>
+      <% if flash[:alert] %>
+      	<p style="color: #F00"><%= flash[:alert] %></p>
+      <% end %>
+      <% if flash[:notice] %>
+      	<p style="color: #0F0"><%= flash[:notice] %></p>
+      <% end %>
+      <%= yield %>
 
-    <% if @current_user %>
-    	<p>
-    	Logged in as <%= @current_user.username %>
-    	<%= link_to("Log Out", session_path(id: @current_user.id), method: 'DELETE') %>
-    	</p>
-    <% else %>
-    	<p><%= link_to("Log In", new_session_path) %></p>
-    <% end %>
+      <% if @current_user %>
+      	<p>
+      	Logged in as <%= @current_user.username %>
+      	<%= link_to("Log Out", session_path(id: @current_user.id), method: 'DELETE') %>
+      	</p>
+      <% else %>
+      	<p><%= link_to("Log In", new_session_path) %></p>
+      <% end %>
+    </div>
   </body>
 </html>
