@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   resource :sessions, only: [:new, :create, :destroy]
   resources :entities, only: [:index]
+  resources :entities_users, only: [:create]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
