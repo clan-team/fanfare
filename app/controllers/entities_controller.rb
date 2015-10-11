@@ -10,4 +10,8 @@ class EntitiesController < ApplicationController
   def tickets
   	@entity = Entity.find(params[:id])
 	end
+
+  def fan
+    @entity = Entity.find(params[:id])
+  end
 end

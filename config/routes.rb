@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get 'entities/:id/tickets' => 'entities#tickets', as: 'tickets'
   get 'twitter/latest' => 'twitter#latest', as: 'latest_twitter'
 
+  get 'entities/:id/fan' => 'entities#fan', as: 'fan'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
