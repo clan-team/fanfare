@@ -29,7 +29,9 @@
     <div class='tweet tweet2'></div>
   </div>
   <div class='tab-contents live-it-contents'>
-    <div class='bar'>Rides</div>
+    <%= link_to(rides_path) do %>
+      <div class='bar'>Rides</div>
+    <% end %>
     <%= link_to(tickets_path) do %>
       <div class='bar'>Tickets</div>
     <% end %>
