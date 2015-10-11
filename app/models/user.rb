@@ -11,6 +11,10 @@ class User < ActiveRecord::Base
   	)
   end
 
+  def authenticated_with?(password)
+    read_attribute(:password_hash) == hash_password(password)
+  end
+
   def self.authenticate(options = {})
   	params = options.merge(
   		'password_hash' =>  hash_password(options['password'])

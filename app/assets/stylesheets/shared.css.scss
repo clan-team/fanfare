@@ -18,3 +18,30 @@ body {
 .btn-default {
   color: $fanfare-blue !important;
 }
+
+.flash {
+  padding: 8px 0 0 15px;
+  background-color: lighten($fanfare-blue, 20%);
+  border-bottom: 1px solid $fanfare-blue;
+}
+
+.top-nav {
+  padding: 8px 15px 0 15px;
+  background-color: lighten($fanfare-blue, 20%);
+  border-bottom: 1px solid $fanfare-blue;
+  overflow: hidden;
+
+  .button {
+    float: right;
+  }
+
+  .user {
+    float: left;
+  }
+
+  .octicon-search {
+    float: right;
+    margin-right: 10px;
+    color: darken($fanfare-blue, 15%);
+  }
+}

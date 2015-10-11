@@ -4,16 +4,23 @@
   &.index {
     min-height: 100%;
     background-color: $fanfare-blue;
+    overflow: hidden;
 
     .done-btn {
       width: 100%;
     }
   }
 
+  &.fan {
+    background-color: #72a6d8;
+    min-height: 100%;
+    overflow: hidden;
+  }
+
   &.show {
     min-height: 100%;
     background-color: $fanfare-blue;
-    
+
     .event_div {
       height: 180px;
       width: 130px;
