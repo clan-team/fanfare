@@ -4,6 +4,7 @@
   &.index {
     min-height: 100%;
     background-color: $fanfare-blue;
+    overflow: hidden;
 
     .done-btn {
       width: 100%;
@@ -13,7 +14,7 @@
   &.show {
     min-height: 100%;
     background-color: $fanfare-blue;
-    
+
     .event_div {
       height: 180px;
       width: 130px;
