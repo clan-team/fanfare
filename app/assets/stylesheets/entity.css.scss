@@ -3,13 +3,17 @@
 	overflow: hidden;
 
 	.logo {
-		float: left;	
-
+		float: left;
+		img {
+			height: 80px;	
+			width: 80px;
+		}
 	}
 
 	.info {
-		float: right;
-		
+		float: left;
+		padding-left: 15px;
+
 	}
 
 }

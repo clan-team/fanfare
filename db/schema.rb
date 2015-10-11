@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151011014632) do
+ActiveRecord::Schema.define(version: 20151011022249) do
 
   create_table "entities", force: :cascade do |t|
     t.string   "name",          limit: 255
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20151011014632) do
     t.float    "location_lat",  limit: 24
     t.float    "location_long", limit: 24
     t.string   "logo_path",     limit: 255
+    t.string   "category",      limit: 255
   end
 
   create_table "entities_users", force: :cascade do |t|
