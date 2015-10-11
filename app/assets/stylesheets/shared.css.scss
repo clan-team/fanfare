@@ -18,21 +18,3 @@ body {
 .btn-default {
   color: $fanfare-blue !important;
 }
-
-.logo {
-  background: asset-url('logo.png') no-repeat;
-  background-size: 200px 200px;
-  height: 200px;
-  margin-right: 15%;
-  margin-left: 15%;
-}
-
-.logotype {
-  background: asset-url('logotype.png') no-repeat;
-  background-size: 200px 35px;
-  height: 35px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  margin-right: 15%;
-  margin-left: 15%;
-}
