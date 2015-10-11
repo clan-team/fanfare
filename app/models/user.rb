@@ -15,6 +15,7 @@ class User < ActiveRecord::Base
   	params = options.merge(
   		'password_hash' =>  hash_password(options['password'])
   	)
+
   	params.delete('password')
   	User.where(params).first
   end
@@ -26,6 +27,4 @@ class User < ActiveRecord::Base
   def hash_password(password)
     self.class.hash_password(password)
   end
-
-
 end

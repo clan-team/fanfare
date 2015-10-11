@@ -9,7 +9,7 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body>
+  <body <%= @current_user ? "data-user-id=\"#{@current_user.id}\"".html_safe : "" %>>
     <% if flash[:alert] %>
     	<p style="color: #F00"><%= flash[:alert] %></p>
     <% end %>

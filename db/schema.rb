@@ -11,15 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151010191534) do
+ActiveRecord::Schema.define(version: 20151011022249) do
 
   create_table "entities", force: :cascade do |t|
     t.string   "name",          limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "location_name", limit: 255
-    t.integer  "location_lat",  limit: 4
-    t.integer  "location_long", limit: 4
+    t.float    "location_lat",  limit: 24
+    t.float    "location_long", limit: 24
+    t.string   "logo_path",     limit: 255
+    t.string   "category",      limit: 255
   end
 
   create_table "entities_users", force: :cascade do |t|
@@ -34,8 +36,8 @@ ActiveRecord::Schema.define(version: 20151010191534) do
     t.string   "location",      limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "location_lat",  limit: 4
-    t.integer  "location_long", limit: 4
+    t.float    "location_lat",  limit: 24
+    t.float    "location_long", limit: 24
   end
 
   create_table "favorite_locations_users", force: :cascade do |t|
@@ -54,8 +56,8 @@ ActiveRecord::Schema.define(version: 20151010191534) do
     t.boolean  "active"
     t.string   "type",          limit: 255
     t.string   "profileImg",    limit: 255
-    t.integer  "lat",           limit: 4
-    t.integer  "long",          limit: 4
+    t.float    "lat",           limit: 24
+    t.float    "long",          limit: 24
     t.datetime "created_at"
     t.datetime "updated_at"
   end

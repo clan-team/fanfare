@@ -1,0 +1,8 @@
+@import 'colors';
+
+.entities {
+  &.index {
+    height: 100%;
+    background-color: $fanfare-blue;
+  }
+}
