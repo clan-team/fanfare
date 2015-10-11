@@ -1,10 +1,17 @@
 <div class='entities show row-fluid'>
+  <%= render(partial: 'entities/shared/entity', locals: { entity: @entity, follow: false }) %>
   <div class='tabs'>
-    <div class='tab'>Read It</div>
-    <div class='tab'>Live it</div>
+    <div class='tab tab-read-it separator'>Read It</div>
+    <div class='tab tab-live-it active'>Live it</div>
   </div>
-  <div class='read-it-contents'>
+  <div class='tab-contents read-it-contents inactive'>
+    Read it contents
   </div>
-  <div class='live-it-contents'>
+  <div class='tab-contents live-it-contents'>
+    <div class='bar'>Rides</div>
+    <div class='bar'>Tickets</div>
+    <div class='bar'>Competitions</div>
+    <div class='bar'>Store</div>
+    <div class='bar'>Auctions</div>
   </div>
 </div>

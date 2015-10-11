@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
 	def create
 		if u = User.authenticate(user_params)
 			session[:user_id] = u.id
-			redirect_to(root_path, notice: "Logged in!")
+			redirect_to(user_entities_path(u), notice: "Logged in!")
 		else
 			redirect_to(new_session_path, alert: "Invalid credentials")
 		end
