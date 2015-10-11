@@ -8,11 +8,12 @@ Rails.application.routes.draw do
   resource :sessions, only: [:new, :create, :destroy]
   resources :entities, only: [:index, :show]
 
-  resources :users, only: [] do
+  resources :users, only: [:create, :new] do
     resources :entities, controller: 'users/entities'
   end
 
   get 'twitter/latest' => 'twitter#latest', as: 'latest_twitter'
+  get 'entities/:id/tickets' => 'entities#tickets'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
